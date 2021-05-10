@@ -1,0 +1,18 @@
+- hosts: localhost
+  vars:
+    home: /host/home
+    zshrc: "{{ home  }}/.zshrc"
+    gitconfig: "{{ home }}/.gitconfig"
+
+  tasks:
+    - name: add preload of asdf and asdf completions
+      lineinfile:
+        path: "{{ zshrc }}"
+        state: present
+        line: . $HOME/.asdf/asdf.sh
+
+    - name: set plugins for zsh
+      lineinfile:
+        path: "{{ zshrc }}"
+        state: present
+        line: plugins=(git docker)
