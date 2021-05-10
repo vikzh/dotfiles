@@ -16,3 +16,13 @@
         path: "{{ zshrc }}"
         state: present
         line: plugins=(git docker)
+
+    - name: set format for git log
+      blockinfile:
+        path: "{{ gitconfig }}"
+        state: present
+        block: |
+          [pretty]
+              my = format:%C(yellow)%h%C(reset) | %C(dim green)%cd%C(reset) | %C(green)%cr%C(reset) | %C(cyan)%s%C(red)%d%C(red)%C(reset) %C(blue)[%an]%C(reset)
+          [format]
+              pretty = my
