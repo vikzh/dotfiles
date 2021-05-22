@@ -14,9 +14,17 @@
     - name: set plugins for zsh
       lineinfile:
         path: "{{ zshrc }}"
-	regexp: '^plugins='
+        regexp: '^plugins='
         state: present
         line: plugins=(git docker)
+
+    - name: set emacs as default editor in gitconfig
+      blockinfile:
+        path: "{{ gitconfig }}"
+        state: present
+        block: |
+          [core]
+             editor = emacs
 
     - name: set format for git log
       blockinfile:
