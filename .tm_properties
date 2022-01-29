@@ -1,0 +1,7 @@
+excludeInFolderSearch = "{tmp,log,coverage,node_modules,dist}"
+excludeInBrowser = "{tmp}"
+excludeInFileChooser  = "{tmp,node_modules,dist}"
+fontSize = 15
+fontName = "Menlo"
+showInvisibles = true
+exclude = "{.DS_Store}"
