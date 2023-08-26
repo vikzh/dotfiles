@@ -1,0 +1,27 @@
+[
+	{ "keys": ["ctrl+command+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["super+shift+t"], "command": "reopen_last_file" },
+	{
+		"keys": ["option+1"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1]]
+		}
+	},
+	{
+		"keys": ["option+2"],
+		"command": "set_layout",
+		"args":
+		{
+			"cols": [0.0, 0.5, 1.0],
+			"rows": [0.0, 1.0],
+			"cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+		}
+	},
+	// enter doesn't work in find all windows
+    { "keys": ["ctrl+enter"], "command": "next_result"},
+    { "keys": ["ctrl+shift+enter"], "command": "prev_result"},
+]
