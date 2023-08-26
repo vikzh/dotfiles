@@ -1,0 +1,40 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"color_scheme": "Alabaster.sublime-color-scheme",
+	"folder_exclude_patterns": ["node_modules", "dist"],
+
+	// "font_face": "Writer",
+	"font_size": 15,
+
+	"margin": 10,
+	"spell_check": true,
+	"highlight_line": false,
+
+	"line_padding_top": 2,
+	"line_padding_bottom": 2,
+
+	"show_encoding": true,
+	"show_line_endings": true,
+	"theme": "auto",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"bold_folder_labels": true,
+  // "caret_extra_width": 2,
+  // "draw_centered": true,
+  // "draw_indent_guides": false,
+  // "draw_white_space": ["selection_none"],
+  /*"font_face": "Writer",*/
+  /*"font_size": 16,*/
+  // "gutter": false,
+  /*"highlight_line": false,*/
+  // "line_padding_bottom": 4,
+  /*"line_padding_top": 4,*/
+  /*"margin": 10,*/
+  // "scroll_context_lines": 2,
+  // "scroll_past_end": 0.5,
+  // "word_wrap": true,
+  // "wrap_width": 72,
+}
