@@ -1,0 +1,16 @@
+/* ~/Library/KeyBindings/DefaultKeyBinding.Dict
+
+https://web.archive.org/web/20090208024812/http://www.erasetotheleft.com/post/mac-os-x-key-bindings/
+
+*/
+
+{
+
+    "^ "       = "setMark:";
+    "$ "       = "selectToMark:";
+/*
+    ""       = "deleteToMark:";
+    ""       = "swapWithMark:";
+*/
+
+}
